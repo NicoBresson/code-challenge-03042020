@@ -22,28 +22,3 @@ exports.overlappingSpreads = function (data) {
   }
   return arrayDuplicates.reduce((a, b) => a + b, 0)
 }
-
-
-// const overlappingSpreads = (data) => {
-//   let newArray = [];
-//   for (i = 0; i < data.length; i++) {
-//     newArray.push(data[i] - 1, data[i] + 1);
-//   }
-//   console.log(data)
-//   console.log(newArray)
-
-//   let arrayDuplicates = [];
-//   let hash = {};
-//   for (const element of newArray) {
-//     if (!hash[`${element}`]) {
-//       hash[`${element}`] = true;
-//     } else {
-//       arrayDuplicates.push(element);
-//     }
-//   }
-//   return arrayDuplicates.reduce((a, b) => a + b, 0)
-// }
-
-// console.log(overlappingSpreads([-3, 5, 8, -1, 6, 11]));
-
-// exports.overlappingSpreads;
