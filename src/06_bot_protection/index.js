@@ -21,6 +21,6 @@ exports.botProtection = function (data) {
     if (!hash[commandChain]) {
       hash[commandChain] = true;
     } else return true;
-  }
+  };
   return false;
 }

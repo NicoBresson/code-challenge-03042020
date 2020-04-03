@@ -9,7 +9,7 @@ exports.overlappingSpreads = function (data) {
   let newArray = [];
   for (i = 0; i < data.length; i++) {
     newArray.push(data[i] - 1, data[i] + 1);
-  }
+  };
 
   let arrayDuplicates = [];
   let hash = {};
@@ -18,7 +18,7 @@ exports.overlappingSpreads = function (data) {
       hash[`${element}`] = true;
     } else {
       arrayDuplicates.push(element);
-    }
-  }
-  return arrayDuplicates.reduce((a, b) => a + b, 0)
+    };
+  };
+  return arrayDuplicates.reduce((a, b) => a + b, 0);
 }

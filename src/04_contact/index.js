@@ -23,24 +23,24 @@
 // Good luck, the future of humanity is in your hands now!
 
 exports.translate = function (number) {
-  let n = number
-  const numberOfCharacters = 3
-  let array = []
+  let n = number;
+  const numberOfCharacters = 3;
+  let array = [];
 
   // Dictionnary
   const dictionnary = {
     '0': 'A',
     '1': 'B',
     '2': 'C'
-  }
+  };
 
-  if (n===0) return 'A'
+  if (n===0) return 'A';
 
   while (n !== 0) {
-    result = Math.floor(n / numberOfCharacters)
-    rest = result % numberOfCharacters
-    array.push(dictionnary[`${rest}`])
-    n = result
+    result = Math.floor(n / numberOfCharacters);
+    rest = n % numberOfCharacters;
+    array.push(dictionnary[`${rest}`]);
+    n = result;
   }
-  return array.reverse().join('')
+  return array.reverse().join('');
 }
